@@ -1,0 +1,20 @@
+.features {
+  background-image: linear-gradient(to right bottom, rgba($color-primary-light,0.8), rgba($color-primary-dark,0.8)),
+url("img/nat-4.jpg");
+  background-position: top;
+  transform: skewY(-5deg);
+  padding: $margin-huge;
+  margin-top: -$margin-big;
+  @include respond(tab-port) {
+    margin-top: -$margin-small;
+  }
+  @include respond(phone) {
+    padding: 16rem 8rem 25rem 8rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  &> * {
+    transform: skewY(5deg);
+  }
+
+}

@@ -1,0 +1,32 @@
+.section-booking {
+  padding: 15rem 0;
+  background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
+
+}
+.book {
+  height: 50rem;
+  margin: 0 auto;
+  background-image:linear-gradient(105deg, rgba($color-white,0.9) 0% 50%,transparent 50%) ,
+  url("img/nat-10.jpg");
+
+  @media (max-width: 1400px){
+    background-image:linear-gradient(105deg, rgba($color-white,0.9) 0% 65%,transparent 65%) ,
+    url("img/nat-10.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  @include respond(tab-port) {
+    background-image:linear-gradient(105deg, rgba($color-white,0.9) 0% 100%,transparent 100%) ,
+    url("img/nat-10.jpg");
+  }
+
+  background-size: 100%;
+  width: 70%;
+  &-form {
+    padding: 4rem 6rem 2rem 6rem;
+    @include respond(tab-land){
+      padding: 4rem 6rem 6rem 6rem;
+    }
+  }
+}
+

@@ -1,0 +1,8 @@
+.section-adventure {
+  background-color: $color-grey-light;
+  margin-top: -$margin-huge;
+  padding: $margin-huge;
+  @include respond(phone) {
+    padding: $margin-huge $margin-medium;
+  }
+}
